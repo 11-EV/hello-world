@@ -2,25 +2,25 @@
 #include<iostream>
 using namespace std;
 template<class T>
-class WEST:public T{
+class WEST {
 public:
-   WEST(T b);
-   show()
+    WEST(T b);
+    T show();
 private:
-   T a[90];
+    T a[90];
+};
+template<class T>
+WEST<T>::WEST(T) :a(b) {
+    show();
 }
 template<class T>
-WEST<T>::WEST(T):a(b){
-      show();
-}
-template<class T>
-WEST<T>::show(){
-    cout<<"find"<<a;
+ T WEST<T>::show() {
+    cout << "find" << a;
 }
 
-int main(){
-   WEST<int>y(90);
-   return 0;
+int main() {
+    WEST<int>y(90);
+    return 0;
 }
 
 
